@@ -1,0 +1,206 @@
+html, body, div, span, applet, object, iframe,h1, h2, i, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0; font-size: 100%;font: inherit;vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}
+
+@font-face{
+    font-family: Tangerine;
+    src: url(../fonts/Tarngerine.ttf) format:("truetype");
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+body{
+    font-family: "Times New Roman", Times, serif;
+    background: #707b74 url("../wave7.png") repeat-x left bottom fixed;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+body a:hover{
+    color: #d07e77;
+}
+header{
+    position: fixed;
+    background-color: #3b3f40;
+    height: 5em;
+    width: 100vw;
+    border-bottom: .01em solid #00505a;
+    z-index: 10;
+}
+.home{
+    font-family: Tangerine;
+    font-size: 3em;
+    position: relative;
+    top: .5em;
+    left: 3%;
+    -webkit-transition: color 1.5s;
+    transition: color 1.5s;
+}
+.home:hover{
+    color: #d07e77;
+} 
+#mnav{
+    position: absolute;
+    right: 3%;
+    top: 1em; 
+}
+#mnav:hover #nav{
+    height: 100vh;
+}
+#active{
+    color: #d07e77;
+}
+#nav{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 0vh;
+    text-align: center;
+    background-color: #70747B;
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    box-shadow: -10em 0em rgba(0, 0, 0, .7);
+    -webkit-transition: height 1.5s;
+    transition: height 1.5s;
+    overflow-y: hidden;
+    z-index: 1;
+}
+#nav ul{
+    display: block;
+    position: relative;
+    top: 15%;
+}
+#nav li{
+    display: block;
+    padding: .2em;
+    margin: 2em;
+}
+#nav li a{
+    -webkit-transition: color .5s;
+    transition: color .5s;
+}
+#nav li a:hover{
+    color: #d07e77;
+}
+.wrapper{
+    font-size: 1em;
+    position: relative;
+    left: 1.8%;
+    top: 5em;
+    padding: 1em;
+    background-color: #3b3f40;
+    border: .01em solid #00505a;
+    width: 90vw;
+}
+aside{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: .01em solid #00505a;
+}
+h1{
+    position: relative;
+    top: 1.7em;
+    text-align: center;
+    font-size: 3em;
+    color: #00505a;
+    padding-top: .4em;
+    padding-bottom: .6em;
+}
+h2{
+    font-family: Tangerine;
+    font-size: 2em;
+    color: #AFC1B2;
+    padding-bottom: .2em;
+}
+i{
+    padding-right: .2em;
+    font-style: italic;
+}
+main p{ 
+    line-height: 2em;
+    text-align: justify;
+}
+#snav{
+    position: fixed;
+    top: 50%;
+    background-color: rgba(112,116,123, .6);
+    list-style: none;
+}
+#snav:hover .side{
+    width: 10em;
+}
+#snav p{
+    display: block;
+    padding-left: .2em;
+    padding-right: .2em;
+    font-size: 3em;
+    float: right;
+}
+.side{
+    display: block;
+    width: 0em;
+    overflow-x: hidden;
+     -webkit-transition: width 1.5s;
+    transition: width 1.5s;
+}
+.side li{
+    padding: .5em;
+    font-size: 1.5em;
+}
+.side li a{
+    -webkit-transition: color .5s;
+    transition: color .5s;
+}
+.side li a:hover{
+    color:#d07e77;
+}
+iframe{
+    border: 0;
+    width: 100%;
+    height: 20em;
+}
+@media only screen and (min-width:799px){
+    #mnav{
+        display: inline-block;
+        position: static;
+    }
+    #mnav:hover #nav{
+        height: auto;
+    }
+    #mnav img{
+        display: none;
+    }
+    #nav{
+        display: inline-block;
+        position: absolute;
+        top: 1.3em;
+        right: 3%;
+        text-align: left;
+        height: auto;
+        width: auto;
+        background-color: #3b3f40;
+        box-shadow: none;
+        font-size: 1.4em;
+    }
+    #nav ul{
+        display: inline-block;
+    }
+    #nav li{
+        display: inline-block;
+        padding: .2em;
+        margin: 0em;
+    }
+    .wrapper{
+        width: 80%;
+        padding: 3em;
+        left: 10%; 
+    }
+    iframe{
+    position: relative;
+    width: 40%;
+    }  
+}
