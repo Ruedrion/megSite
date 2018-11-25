@@ -2,7 +2,14 @@ html, body, div, span, applet, object, iframe,h1, h2, i, h4, h5, h6, p, blockquo
 
 @font-face{
     font-family: 'Tangerine';
-    src: url('../fonts/Tarngerine.ttf') format('truetype');
+    src: url('tangerine-webfont.eot');
+    src: url('tangerine-webfont.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/Tarngerine.ttf') format('truetype'),
+         url('tangerine-webfont.woff2') format('woff2'),
+         url('tangerine-webfont.svg#tangerineregular') format('svg'),
+         url('tangerine-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 a{
