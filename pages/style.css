@@ -120,7 +120,7 @@ i{
     padding-right: .2em;
     font-style: italic;
 }
-main p{ 
+.wrapper p{ 
     line-height: 2em;
     text-align: justify;
 }

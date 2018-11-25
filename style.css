@@ -79,9 +79,9 @@ header{
 }
 .wrapper{
     font-size: 1em;
-    position: absolute;
+    position: relative;
     left: 1.8%;
-    top: 5em;
+    top: 9em;
     padding: 1em;
     background-color: #3b3f40;
     border: .01em solid #00505a;
@@ -116,12 +116,12 @@ i{
     float: left;
     font-style: italic;
 }
-main img{
+.wrapper img{
     float: left;
     max-width: 25%;
     padding-right: .5em;
 }
-main p{ 
+.wrapper p{ 
     line-height: 2em;
     text-align: justify;
 }
